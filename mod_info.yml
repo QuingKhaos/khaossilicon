@@ -1,10 +1,11 @@
 mod_info:
   title: |
-    ###TITLE###
+    Silica & Silicon Revamped
   summary: |
-    ###DESC###
+    Adds silica, silicon, and basic fiber optics to the game.
   description_file: README.md
   attach_source_link: true
   license: default_gnugplv3
-  category: internal
-  tags: []
+  category: content
+  tags:
+    - manufacturing
