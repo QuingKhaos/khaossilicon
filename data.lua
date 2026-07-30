@@ -1,9 +1,11 @@
 require("__khaossilicon__.prototypes.item.silica")
 require("__khaossilicon__.prototypes.item.silicon")
+require("__khaossilicon__.prototypes.item.silicone")
 require("__khaossilicon__.prototypes.item.silicon-wafer")
 
 require("__khaossilicon__.prototypes.recipe.silica")
 require("__khaossilicon__.prototypes.recipe.silicon")
+require("__khaossilicon__.prototypes.recipe.silicone")
 require("__khaossilicon__.prototypes.recipe.silicon-wafer")
 
 require("__khaossilicon__.prototypes.technology.silica-processing")

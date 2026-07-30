@@ -1,6 +1,6 @@
 local khaoslib_technology = require("__khaoslib__.prototypes.technology")
 
-khaoslib_technology:load {
+local tech = khaoslib_technology:load {
   type = "technology",
   name = "silicon-processing",
   order = "b-b",
@@ -15,4 +15,11 @@ khaoslib_technology:load {
     },
   }
   :add_unlock_recipe("silicon")
-  :commit()
+
+if settings.startup["khaossilicon-more"].value then
+  tech
+    :add_prerequisite("automation-2")
+    :add_unlock_recipe("silicone")
+end
+
+tech:commit()
