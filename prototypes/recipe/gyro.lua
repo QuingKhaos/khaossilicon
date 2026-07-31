@@ -1,7 +1,7 @@
 local khaoslib_recipe = require("__khaoslib__.prototypes.recipe")
 
 if settings.startup["khaossilicon-more"].value then
-  khaoslib_recipe:load {
+  local recipe = khaoslib_recipe:load {
     type = "recipe",
     name = "gyro",
     subgroup = "intermediate-product",
@@ -20,5 +20,10 @@ if settings.startup["khaossilicon-more"].value then
     :set_results {
       {type = "item", name = "gyro", amount = 4},
     }
-    :commit()
+
+  if mods["khaostitanium"] then
+    recipe:add_ingredient {type = "item", name = "titanium-plate", amount = 1} :commit()
+  end
+
+  recipe:commit()
 end

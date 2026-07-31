@@ -4,7 +4,7 @@ khaoslib_recipe:load {
   type = "recipe",
   name = "silica",
   subgroup = "raw-material",
-  order = "a[smelting]-d[silica]",
+  order = "a[smelting]-ea[silica]",
   enabled = false,
   auto_recycle = false,
   allow_productivity = true,

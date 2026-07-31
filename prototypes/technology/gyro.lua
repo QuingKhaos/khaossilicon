@@ -1,7 +1,7 @@
 local khaoslib_technology = require("__khaoslib__.prototypes.technology")
 
 if settings.startup["khaossilicon-more"].value then
-  khaoslib_technology:load {
+  local tech = khaoslib_technology:load {
     type = "technology",
     name = "gyro",
     order = "b-b",
@@ -17,5 +17,10 @@ if settings.startup["khaossilicon-more"].value then
       },
     }
     :add_unlock_recipe("gyro")
-    :commit()
+
+  if mods["khaostitanium"] then
+    tech:add_prerequisite("titanium-processing")
+  end
+
+  tech:commit()
 end

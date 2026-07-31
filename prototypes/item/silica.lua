@@ -5,7 +5,7 @@ khaoslib_item:load {
   type = "item",
   name = "silica",
   subgroup = "raw-material",
-  order = "a[smelting]-d[silica]",
+  order = "a[smelting]-ea[silica]",
   stack_size = 100,
   weight = 0.2 * kg,
 
