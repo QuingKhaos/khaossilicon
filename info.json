@@ -9,7 +9,6 @@
   "dependencies": [
     "base >= 2.1.11",
     "? quality >= 2.1.11",
-    "? recycler >= 2.1.11",
     "! space-age",
 
     "khaoslib >= 2.1.0"
