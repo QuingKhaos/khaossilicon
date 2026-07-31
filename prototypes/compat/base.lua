@@ -5,6 +5,18 @@ khaoslib_recipe:load("concrete"):replace_ingredient("stone-brick", {type = "item
 khaoslib_technology:load("concrete"):add_prerequisite("silica-processing"):commit()
 
 if settings.startup["khaossilicon-more"].value then
+  khaoslib_recipe:load("flying-robot-frame"):add_ingredient {type = "item", name = "gyro", amount = 1} :commit()
+  khaoslib_technology:load("robotics"):add_prerequisite("gyro"):commit()
+
+  khaoslib_recipe:load("distractor-capsule"):add_ingredient {type = "item", name = "gyro", amount = 3} :commit()
+  khaoslib_technology:load("distractor"):add_prerequisite("gyro"):commit()
+
+  khaoslib_recipe:load("laser-turret"):add_ingredient {type = "item", name = "gyro", amount = 1} :commit()
+  khaoslib_technology:load("laser-turret"):add_prerequisite("gyro"):commit()
+
+  khaoslib_recipe:load("artillery-shell"):add_ingredient {type = "item", name = "gyro", amount = 1} :commit()
+  khaoslib_technology:load("artillery"):add_prerequisite("gyro"):commit()
+
   khaoslib_recipe:load("lubricant")
     :add_ingredient {type = "item", name = "silicone", amount = 1}
     :replace_result("lubricant", function(result) result.amount = result.amount and result.amount + 10 or 10 return result end)
@@ -16,10 +28,10 @@ if settings.startup["khaossilicon-more"].value then
     :commit()
 
   khaoslib_technology:load("engine"):add_prerequisite("silicon-processing"):commit()
-  khaoslib_recipe:load("power-armor"):add_ingredient {type = "item", name = "silicone", amount = 10}:commit()
-  khaoslib_recipe:load("exoskeleton-equipment"):add_ingredient {type = "item", name = "silicone", amount = 10}:commit()
-  khaoslib_recipe:load("fission-reactor-equipment"):add_ingredient {type = "item", name = "silicone", amount = 80}:commit()
-  khaoslib_recipe:load("personal-roboport-mk2-equipment"):add_ingredient {type = "item", name = "silicone", amount = 50}:commit()
+  khaoslib_recipe:load("power-armor"):add_ingredient {type = "item", name = "silicone", amount = 10} :commit()
+  khaoslib_recipe:load("exoskeleton-equipment"):add_ingredient {type = "item", name = "silicone", amount = 10} :commit()
+  khaoslib_recipe:load("fission-reactor-equipment"):add_ingredient {type = "item", name = "silicone", amount = 80} :commit()
+  khaoslib_recipe:load("personal-roboport-mk2-equipment"):add_ingredient {type = "item", name = "silicone", amount = 50} :commit()
 
   khaoslib_recipe:load("processing-unit")
     :replace_ingredient("electronic-circuit", function(ingredient) ingredient.amount = math.max(1, ingredient.amount - 10) return ingredient end)
