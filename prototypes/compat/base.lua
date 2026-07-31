@@ -52,6 +52,10 @@ if settings.startup["khaossilicon-more"].value then
       :commit()
   end
 
+  khaoslib_recipe:load("solar-panel"):replace_ingredient("electronic-circuit", function(ingredient) ingredient.name = "solar-cell" return ingredient end):commit()
+  khaoslib_technology:load("solar-energy"):add_unlock_recipe("solar-cell"):commit()
+  khaoslib_recipe:load("solar-panel-equipment"):replace_ingredient("solar-panel", function(ingredient) ingredient.name = "solar-cell" return ingredient end):commit()
+
   khaoslib_recipe:load("advanced-circuit")
     :set {energy_required = (khaoslib_recipe.get("advanced-circuit").energy_required --[[@as double]]) * 3}
     :replace_result("advanced-circuit", function(result) result.amount = result.amount and result.amount * 3 or 0 return result end)
