@@ -90,13 +90,32 @@ else
   khaoslib_technology:load("modules"):add_prerequisite("silicon-processing"):commit()
 end
 
-khaoslib_recipe:load("arithmetic-combinator"):add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}:commit()
-khaoslib_recipe:load("constant-combinator"):add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}:commit()
-khaoslib_recipe:load("decider-combinator"):add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}:commit()
-khaoslib_recipe:load("programmable-speaker"):add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}:commit()
+khaoslib_recipe:load("beacon"):replace_ingredient("copper-cable", function(ingredient) ingredient.name = "optical-fiber" return ingredient end):commit()
+
+khaoslib_recipe:load("arithmetic-combinator")
+  :add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}
+  :add_ingredient {type = "item", name = "optical-fiber", amount = 1}
+  :commit()
+
+khaoslib_recipe:load("constant-combinator")
+  :add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}
+  :add_ingredient {type = "item", name = "optical-fiber", amount = 1}
+  :commit()
+
+khaoslib_recipe:load("decider-combinator")
+  :add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}
+  :add_ingredient {type = "item", name = "optical-fiber", amount = 1}
+  :commit()
+
+khaoslib_recipe:load("programmable-speaker")
+  :add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}
+  :add_ingredient {type = "item", name = "optical-fiber", amount = 1}
+  :commit()
+
+khaoslib_recipe:load("display-panel"):add_ingredient {type = "item", name = "optical-fiber", amount = 1} :commit()
 
 khaoslib_technology:load("advanced-circuit"):add_prerequisite("silicon-processing"):commit()
-khaoslib_technology:load("circuit-network"):add_prerequisite("silicon-processing"):commit()
+khaoslib_technology:load("circuit-network"):add_prerequisite("silicon-processing"):add_prerequisite("fiber-optics"):commit()
 
 if settings.startup["khaossilicon-more"].value then
   khaoslib_technology:load("advanced-circuit"):add_prerequisite("sulfur-processing"):add_unlock_recipe("silicon-wafer"):commit()
