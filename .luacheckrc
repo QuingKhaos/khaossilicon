@@ -49,6 +49,8 @@ files["prototypes/**/*.lua"] = {
     "hour",
     "meter",
     "kilometer",
+    -- custom
+    "silicon_wafer_or_silicon",
   },
 }
 

@@ -16,5 +16,10 @@
                 "replace": "__khaossilicon__.$1"
             }
         ]
+    },
+    "diagnostics": {
+      "globals": [
+        "silicon_wafer_or_silicon"
+      ]
     }
 }
