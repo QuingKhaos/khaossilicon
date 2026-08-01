@@ -103,6 +103,7 @@ else
 end
 
 khaoslib_recipe:load("beacon"):replace_ingredient("copper-cable", function(ingredient) ingredient.name = "optical-fiber" return ingredient end):commit()
+khaoslib_technology:load("effect-transmission"):add_prerequisite("fiber-optics"):commit()
 
 khaoslib_recipe:load("arithmetic-combinator")
   :add_ingredient {type = "item", name = silicon_wafer_or_silicon, amount = 1}

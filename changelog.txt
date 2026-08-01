@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: ????
+  Bugfixes:
+    - Add missing fiber optics prerequisite to effect transmission technology.
   Compatibility:
     - Add support for Jetpack.
     - Add support for Lex's Aircraft.
