@@ -27,4 +27,5 @@ silicon_wafer_or_silicon = settings.startup["khaossilicon-more"].value and "sili
 
 require("__khaossilicon__.prototypes.compat.base")
 
+require("__khaossilicon__.prototypes.compat.jetpack")
 require("__khaossilicon__.prototypes.compat.lex-aircraft")
