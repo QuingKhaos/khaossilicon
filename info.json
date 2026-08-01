@@ -15,7 +15,12 @@
     "? khaostitanium >= 0.1.0",
 
     "? jetpack >= 0.5.1",
-    "? lex-aircraft >= 1.4.0"
+    "? lex-aircraft >= 1.4.0",
+
+    "! bzsilicon",
+    "! bzsilicon2",
+    "! bztitanium",
+    "! bztitanium2"
   ],
   "package": {
     "ignore": [
