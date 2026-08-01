@@ -27,7 +27,9 @@
 
     "khaoslead",
     "khaossilicon",
-    "khaostitanium"
+    "khaostitanium",
+
+    "lex-aircraft"
   ],
   "expansion_required": true
 }

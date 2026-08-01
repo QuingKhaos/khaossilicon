@@ -4,7 +4,7 @@
   "description": "Adds silica, silicon, and basic fiber optics to the game.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
@@ -12,7 +12,9 @@
     "! space-age",
 
     "khaoslib >= 2.1.0",
-    "? khaostitanium >= 0.1.0"
+    "? khaostitanium >= 0.1.0",
+
+    "? lex-aircraft >= 1.4.0"
   ],
   "package": {
     "ignore": [

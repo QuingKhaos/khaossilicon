@@ -26,3 +26,5 @@ require("__khaossilicon__.prototypes.technology.gyro")
 silicon_wafer_or_silicon = settings.startup["khaossilicon-more"].value and "silicon-wafer" or "silicon"
 
 require("__khaossilicon__.prototypes.compat.base")
+
+require("__khaossilicon__.prototypes.compat.lex-aircraft")

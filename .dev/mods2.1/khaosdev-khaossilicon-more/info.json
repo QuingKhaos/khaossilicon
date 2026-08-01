@@ -25,7 +25,9 @@
     "khaostransportgroup",
     "science-tab",
 
-    "khaossilicon"
+    "khaossilicon",
+
+    "lex-aircraft"
   ],
   "expansion_required": true
 }
