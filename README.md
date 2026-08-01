@@ -16,6 +16,7 @@ If you want to see your favorite mod supported, please open a discussion thread 
 
 The following mods have their recipes changed:
 
+- [AAI Signal Transmission](https://mods.factorio.com/mod/aai-signal-transmission)
 - [Jetpack](https://mods.factorio.com/mod/jetpack)
 - [Lex's Aircraft](https://mods.factorio.com/mod/lex-aircraft)
 

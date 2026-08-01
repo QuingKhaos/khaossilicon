@@ -4,6 +4,7 @@ Date: ????
   Bugfixes:
     - Add missing fiber optics prerequisite to effect transmission technology.
   Compatibility:
+    - Add support for AAI Signal Transmission.
     - Add support for Jetpack.
     - Add support for Lex's Aircraft.
 ---------------------------------------------------------------------------------------------------
