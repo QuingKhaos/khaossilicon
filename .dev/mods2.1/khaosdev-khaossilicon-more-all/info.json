@@ -25,9 +25,12 @@
     "khaostransportgroup",
     "science-tab",
 
-    "khaoslead",
+    "+ khaoscarbon",
+    "+ khaoslead",
     "khaossilicon",
-    "khaostitanium",
+    "+ khaostin",
+    "+ khaostitanium",
+    "+ khaoszirconium",
 
     "aai-signal-transmission",
     "jetpack",

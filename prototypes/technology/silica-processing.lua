@@ -1,6 +1,7 @@
+local khaoslib_entity = require("__khaoslib__.prototypes.entity")
 local khaoslib_technology = require("__khaoslib__.prototypes.technology")
 
-khaoslib_technology:load {
+local tech = khaoslib_technology:load {
   type = "technology",
   name = "silica-processing",
   localised_description = {"technology-description.silica-processing-vanilla"},
@@ -16,4 +17,9 @@ khaoslib_technology:load {
     },
   }
   :add_unlock_recipe("silica")
-  :commit()
+
+if not mods["khaoscarbon"] and khaoslib_entity.exists("assembling-machine", "basic-crusher") then
+  tech:add_prerequisite("automation-2")
+end
+
+tech:commit()
