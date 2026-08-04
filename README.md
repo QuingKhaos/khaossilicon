@@ -4,8 +4,6 @@
 
 Adds Silica, Silicon, and some basic Fiber Optics to the game, with an option for more intermediates including silicon wafers, silicone and more.
 
-**If you don't own the Space Age DLC, you need to disable the recommended *Basic Crusher* mod or the base game won't load.**
-
 ## Remarks
 
 This revamp drops support for overhaul mods completely and currently Space Age too. Adding recycler and/or quality mod should still be possible. The focus lies at the moment to provide a consistent experience for the base game. Space Age support will be re-added in the future, as well as support for more modded planets.
