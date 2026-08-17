@@ -4,7 +4,7 @@
   "description": "Adds silica, silicon, and basic fiber optics to the game.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
